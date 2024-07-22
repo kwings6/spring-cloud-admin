@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: spring-boot-admin-server-b
+
+  cloud:
+    nacos:
+      discovery:
+        password: 'nacos'
+        username: 'nacos'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  file:
+    name: admin-server-b.log

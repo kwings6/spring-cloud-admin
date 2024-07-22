@@ -1,0 +1,25 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: spring-boot-admin-server-a
+
+  cloud:
+    nacos:
+      discovery:
+        password: 'nacos'
+        username: 'nacos'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  file:
+    name: admin-server-a2.log
