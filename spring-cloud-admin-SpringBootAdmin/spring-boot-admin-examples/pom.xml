@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>com.alibaba.cloud.admin</groupId>
-        <artifactId>spring-cloud-admin-SpringBootAdmin</artifactId>
         <version>2023.0.1.0</version>
+        <artifactId>spring-cloud-admin-SpringBootAdmin</artifactId>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>

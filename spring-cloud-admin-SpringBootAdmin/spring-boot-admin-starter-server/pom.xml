@@ -30,11 +30,13 @@
     <dependencies>
         <dependency>
             <groupId>com.alibaba.cloud.admin</groupId>
-            <artifactId>spring-boot-admin-server</artifactId>
+            <artifactId>spring-boot-admin-server-ui</artifactId>
+            <version>2023.0.1.0</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cloud.admin</groupId>
-            <artifactId>spring-boot-admin-server-ui</artifactId>
+            <artifactId>spring-boot-admin-server</artifactId>
+            <version>2023.0.1.0</version>
         </dependency>
     </dependencies>
     <profiles>

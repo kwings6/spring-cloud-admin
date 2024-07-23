@@ -68,6 +68,13 @@
                 <version>${testcontainers.version}</version>
                 <scope>test</scope>
             </dependency>
+                <dependency>
+                    <groupId>org.springframework.cloud</groupId>
+                    <artifactId>spring-cloud-dependencies</artifactId>
+                    <version>${spring-cloud.version}</version>
+<!--                    <type>pom</type>-->
+                    <scope>import</scope>
+                </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
@@ -97,24 +104,24 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>build-helper-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>generate-automatic-module-name</id>
-                        <goals>
-                            <goal>regex-property</goal>
-                        </goals>
-                        <configuration>
-                            <name>automatic-module-name</name>
-                            <value>${project.groupId}.${project.artifactId}</value>
-                            <regex>[^a-zA-Z0-9]+</regex>
-                            <replacement>.</replacement>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.codehaus.mojo</groupId>-->
+<!--                <artifactId>build-helper-maven-plugin</artifactId>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <id>generate-automatic-module-name</id>-->
+<!--                        <goals>-->
+<!--                            <goal>regex-property</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <name>automatic-module-name</name>-->
+<!--                            <value>${project.groupId}.${project.artifactId}</value>-->
+<!--                            <regex>[^a-zA-Z0-9]+</regex>-->
+<!--                            <replacement>.</replacement>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
